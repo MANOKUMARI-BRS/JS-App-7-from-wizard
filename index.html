@@ -72,7 +72,7 @@
                           type="text"
                           name="firstname"
                           id="firstname"
-                          size="50"
+                          size="40"
                           placeholder="First Name"
                           autocomplete = "off"
 
@@ -84,7 +84,7 @@
                           type="text"
                           name="lastname"
                           id="lastname"
-                          size="50"
+                          size="40"
                           placeholder="Last Name"
                           autocomplete = "off"
                         />
@@ -108,10 +108,9 @@
                       </div>
                       <label class="hide">Phone Number</label>
                       <div class="errorMesg">
-                        <input 
+                        <input onkeydown="phonenumberFormatter()"
+                        id="phone number"
                         type="text"
-                        id="validation"
-                        name="phone number"
                         placeholder="Phone Number"
                         autocomplete="off"
                         >
@@ -120,8 +119,7 @@
                       <div class="errorMesg">
                         <input
                           type="code"
-                          name="zipcode"
-                          id="validation"
+                          id="zipcode"
                           min="1"
                           max="5"
                           placeholder="ZipCode"
